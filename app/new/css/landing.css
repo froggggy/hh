@@ -286,14 +286,14 @@ label:hover {
   .footer_inner .information {top:3.3rem;}
 }
 @media screen and (max-width: 1024px){
-  html {font-size: 8px}
+  html {font-size: 9px}
   #header.fixedTop {background-color: #0e73c3;} 
   .fixedTop .view_nav {background-image: url(../images/landing/img_toggle01.png);}
   .fixedTop .inner_header .logo a {background-image:url(../images/landing/logo_eform_head_m2.svg)}
   .inner_header .logo {top:27px}
   .inner_header .logo a {width: 137px; height: 32px; background:url(../images/landing/logo_eform_head_m1.svg) no-repeat 0 0;}
   .view_nav {display: inline-block; width:38px; height:61px;background:url(../images/landing/img_toggle02.png) no-repeat 16px 16px; background-size: 6px 29px;box-sizing: border-box; padding:16px; position: absolute; top:13px; right:20px;}
-  #gnb{float: none;position: absolute;width: 100%;float: none;margin: 0;background:rgba(255, 255, 255, 0.8);;left:0;top:92px}
+  #gnb{float: none;position: absolute;width: 100%;float: none;margin: 0;background:rgba(255, 255, 255, 0.8);left:0;top:92px}
   #gnb ul li {float: none; text-align: center;}
   #gnb ul li a {padding:0;margin:0 20px;width: calc(100% - 40px);box-sizing: border-box;font-weight: 600;}    
   .main_nav, .sub_nav {float: none;margin:0}
@@ -308,6 +308,7 @@ label:hover {
   .section_cont .desc_list li.signature .inform,
   .section_cont .desc_list li.mobileform .inform,
   .section_cont .desc_list li.aws .inform {margin-top: 0;width: 100%; float: none;box-sizing: border-box}
+  .contents + .visual_bottom {background-size:contain}
 }
 @media screen and (min-width: 768px) and (max-width: 979px){
   
