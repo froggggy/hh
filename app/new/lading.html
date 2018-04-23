@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Lading page</title>  
+    <link rel="stylesheet" href="css/landing.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./../plugins/swiper/swiper.min.css">
+    <script src="./../plugins/jquery/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- [D] #header 상단에 붙으면 .fixed추가 -->
+        <header id="header">
+            <div class="inner_header">
+                <h1 class="logo"><a href="#"><span class="blind">eformsign</span></a></h1>
+                <button type="button" class="view_nav"><span class="blind">네비게이션 열기</span></button>
+                <nav id="gnb" style="display:none">
+                    <h2 class="blind">General Navigation</h2>
+                    <ul class="main_nav">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Guide</a></li>
+                    </ul>
+                    <!-- [D] 로그인 전, 후  type확인 -->
+                    <ul class="sub_nav">
+                        <!-- 로그인 전 -->
+                        <!-- <li><a href="#">LOGIN</a></li>
+                        <li><a href="#" class="btn_squere">FREE TRIAL</a></li>-->
+                        <!-- 로그인 후 -->
+                        <li><a href="#">LOGOUT</a></li>
+                        <li class="invitation"><a href="#" >Invitation List (<strong>0</strong>)</a></li>
+                    </ul>
+                </nav> <!-- //gnb -->
+            </div> <!--//inner_header -->
+        </header><!-- //header -->
+
+        <hr>
+
+        <section class="header_banner">
+            <!-- Swiper -->
+            <div class="swiper-container" id="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="description_box">
+                                <h3 class="tit">Reliable digital signature </h3>
+                                <p class="desc">Make documents trustworthy with digital signatures
+                                        that can be audit trail anytime, anywhere.</p>
+                                <a href="#" class="btn_border">GET STARTED</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="description_box">
+                                <h3 class="tit">Data is used in a variety of ways with a smart safety checklist</h3>
+                                <p class="desc">It is possible to grasp real-time contents of field work
+                                        and to perform smart check work that can utilize the contents in related work.</p>
+                                <a href="#" class="btn_border">GET STARTED</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="description_box">
+                                <h3 class="tit">Paperless Office!<br>All work is possiblewith mobile</h3>
+                                <p class="desc">Create a smart, paperless work environment<br>with a variety of mobile devices and tablets.</p>
+                                <a href="#" class="btn_border">GET STARTED</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section><!-- //header_banner -->
+
+        <hr>
+        
+        <section id="container">
+            <div class="contents">
+                <section class="section_cont overview">
+                    <h3>What you can do</h3>
+                    <ul class="desc_list">
+                        <li class="easyquick">
+                            <p class="picture"><img src="images/landing/img_desc_easyquick.png" alt=""></p>
+                            <div class="inform">
+                                <h4>Easy &amp; Quick Transformation</h4>
+                                <p class="desc">Various documents used in your company
+                                    can be easily and quickly converted to 
+                                    electronic format with the MS Office plug-in.</p>
+                            </div>
+                        </li>
+                        <li class="signature">
+                            <p class="picture"><img src="images/landing/img_desc_signature.png" alt=""></p>
+                            <div class="inform">
+                                <h4>Electronic Signature</h4>
+                                <p class="desc">E-Signature contains information such as 
+                                pressure, signature information, location, 
+                                time, and number of strokes, making 
+                                all documents that require signing reliable.</p>
+                            </div>
+                        </li>
+                        <li class="mobileform">
+                            <p class="picture"><img src="images/landing/img_desc_mobileform.png" alt=""></p>
+                            <div class="inform">
+                                <h4>Smart Mobile Form</h4>
+                                <p class="desc">Supports various mobile environments such
+                                as iOS, Android and WinRT. It supports digital 
+                                signatures and simple data input as well as 
+                                various input functions such as photo, voice and 
+                                barcode to create smarter electronic documents.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="aws">
+                            <p class="picture"><img src="images/landing/img_desc_aws.png" alt=""></p>
+                            <div class="inform">
+                                <h4>Secured Archiving</h4>
+                                <p class="desc">All created documents are double-and-triple-
+                                distributed and stored securely in Amazon 
+                                cloud storage and If you need it, use a time
+                                stamp to avoid forgery and modulation.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section><!-- page_overview -->
+
+                <hr>
+
+                <section class="section_cont features">
+                    <h3>Choose the suitable pricing to maximize your work efficiency</h3>
+                    
+                    <ul class="tabs_plan">
+                        <!-- [D] li에 .on 활성화 -->
+                        <li class="on"><a href="#">small organization</a></li>
+                        <li><a href="#">large organization</a></li>
+                    </ul>
+                    <p class="sub_desc">If you need more user accounts, please choose other plans in “Large Organization”.</p>
+                    <div class="wrap_type">
+                        <div class="model_small">
+                            <ul>
+                                <!-- [D] li에 .highlight 는 강조영역 -->
+                                <li>
+                                    <h4 class="version">personal</h4>
+                                    <div class="price">
+                                        <p class="unit">SGD<strong class="num">14</strong></p>
+                                    </div>
+                                    <div class="bor_table">
+                                        <div class="box_table">
+                                            <table>
+                                                <caption>SGD14 정보</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">User Account</th>
+                                                        <td><span class="row">Only 1</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Document Transactions</th>
+                                                        <td><span class="row">50/month</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Storage</th>
+                                                        <td><span class="row">10 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Extra Charge </th>
+                                                        <td>
+                                                            <span class="row">SGD 2.6 /GB</span>
+                                                            <span class="row">SGD 4 /Document</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn_bottom"><span class="ico_mail">contact us</span></a>
+                                </li>
+                                <li class="highlight">
+                                    <h4 class="version">SMALL3</h4>
+                                    <div class="price">
+                                        <p class="guide_txt">1 month free trial</p>
+                                        <p class="unit">SGD<strong class="num">79</strong></p>
+                                    </div>
+                                    <div class="bor_table">
+                                        <div class="box_table">
+                                            <table>
+                                                <caption>SGD79 정보</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">User Account</th>
+                                                        <td><span class="row">3 (maximum)</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Document Transactions</th>
+                                                        <td><span class="row">300 /month</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Storage</th>
+                                                        <td><span class="row">60 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Extra Charge </th>
+                                                        <td>
+                                                            <span class="row">SGD 2.6 /GB</span>
+                                                            <span class="row">SGD 3.2 /Document</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn_bottom"><span class="ico_mail">start free trial</span></a>
+                                </li>
+                                <li>
+                                    <h4 class="version">small6</h4>
+                                    <div class="price">
+                                        <p class="unit">SGD<strong class="num">129</strong></p>
+                                    </div>
+                                    <div class="bor_table">
+                                        <div class="box_table">
+                                            <table>
+                                                <caption>SGD129 정보</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">User Account</th>
+                                                        <td><span class="row">6 (maximum)</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Document Transactions</th>
+                                                        <td><span class="row">500/month</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Storage</th>
+                                                        <td><span class="row">100 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Extra Charge </th>
+                                                        <td>
+                                                            <span class="row">SGD 2.6 /GB</span>
+                                                            <span class="row">SGD 2.6 /Document</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn_bottom"><span class="ico_mail">contact us</span></a>
+                                </li>
+                                <li>
+                                    <h4 class="version">small9</h4>
+                                    <div class="price">
+                                        <p class="unit">SGD<strong class="num">199</strong></p>
+                                    </div>
+                                    <div class="bor_table">
+                                        <div class="box_table">
+                                            <table>
+                                                <caption>SGD199 정보</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">User Account</th>
+                                                        <td><span class="row">9 (maximum)</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Document Transactions</th>
+                                                        <td><span class="row">50/month</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Storage</th>
+                                                        <td><span class="row">10 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Extra Charge </th>
+                                                        <td>
+                                                            <span class="row">SGD 2.6 /GB</span>
+                                                            <span class="row">SGD 2.6 /Document</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn_bottom"><span class="ico_mail">contact us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="model_large">
+                            <ul>
+                                <!-- [D] li에 .highlight 는 강조영역 -->
+                                <li>
+                                    <h4 class="version">basic</h4>
+                                    <div class="price">
+                                        <p class="unit">SGD<strong class="num">279</strong></p>
+                                    </div>
+                                    <div class="bor_table">
+                                        <div class="box_table">
+                                            <table>
+                                                <caption>SGD279 정보</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">User Account</th>
+                                                        <td><span class="row">10</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Document Transactions</th>
+                                                        <td><span class="row">300/month</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Storage</th>
+                                                        <td><span class="row">210 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Extra Charge </th>
+                                                        <td>
+                                                            <span class="row">SGD 4 /User</span>
+                                                            <span class="row">SGD 2.6 /GB</span>
+                                                            <span class="row">SGD 3.2 /Document</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn_bottom"><span class="ico_mail">contact us</span></a>
+                                </li>
+                                <li>
+                                    <h4 class="version">Standard</h4>
+                                    <div class="price">
+                                        <p class="guide_txt border">popular</p>
+                                        <p class="unit">SGD<strong class="num">399</strong></p>
+                                    </div>
+                                    <div class="bor_table">
+                                        <div class="box_table">
+                                            <table>
+                                                <caption>SGD399 정보</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">User Account</th>
+                                                        <td><span class="row">10</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Document Transactions</th>
+                                                        <td><span class="row">1,000 /month</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Storage</th>
+                                                        <td><span class="row">300 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Extra Charge </th>
+                                                        <td>
+                                                            <span class="row">SGD 4 /User</span>
+                                                            <span class="row">SGD 2.6 /GB</span>
+                                                            <span class="row">SGD 2.6 /Document</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn_bottom"><span class="ico_mail">contact us</span></a>
+                                </li>
+                                <li>
+                                    <h4 class="version">pro</h4>
+                                    <div class="price">
+                                        <p class="unit">SGD<strong class="num">649</strong></p>
+                                    </div>
+                                    <div class="bor_table">
+                                        <div class="box_table">
+                                            <table>
+                                                <caption>SGD649 정보</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">User Account</th>
+                                                        <td><span class="row">10</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Document Transactions</th>
+                                                        <td><span class="row">5,000/month</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Storage</th>
+                                                        <td><span class="row">500 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Extra Charge </th>
+                                                        <td>
+                                                            <span class="row">SGD 4 /User</span>
+                                                            <span class="row">SGD 2.6 /GB</span>
+                                                            <span class="row">SGD 2 /Document</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn_bottom"><span class="ico_mail">contact us</span></a>
+                                </li>
+                                <li class="inquiries_area">
+                                    <div class="tit_box">
+                                        <span>For more inquiries</span>
+                                    </div>
+                                    <ul class="list_box">
+                                        <li>Do you have a sizable company?</li>
+                                        <li>Do you require on-premises version?</li>
+                                        <li>Do you want to intergrate our form with the company software?</li>
+                                        <li>Contact eformsign sales representative.</li>
+                                    </ul>
+                                    <a href="#" class="btn_bottom"><span class="ico_mail">contact us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <hr>
+
+                <section class="section_cont plan">
+                    <h3>Install the app on your device</h3>
+                    <p class="sub_tit">Now try searching for eFormSignfrom Google Play and the App Store</p>
+                    <div class="btn_area">
+                        <a href="#"><img src="images/landing/btn_google.gif" alt="Get it on Google Play"></a>
+                        <a href="#"><img src="images/landing/btn_apple.gif" alt="Download on the App store"></a>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section class="section_cont download">
+                    <h3>Use through these simple steps</h3>
+                    <ol>
+                        <li>
+                            <p class="stpes"><strong class="circle">1</strong>Create Admin account &#38; Company</p>
+                            <p class="step_pic"><img src="images/landing/img_step01.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">2</strong>Create Admin account &#38; Company</p>
+                            <p class="step_pic"><img src="images/landing/img_step02.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">3</strong>login</p>
+                            <p class="step_pic"><img src="images/landing/img_step03.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">4</strong>About Menu</p>
+                            <p class="step_pic"><img src="images/landing/img_step04.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">5</strong>Create Admin account &#38; Company</p>
+                            <p class="step_pic"><img src="images/landing/img_step05.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">5-1</strong></p>
+                            <p class="step_pic"><img src="images/landing/img_step05_1.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">6</strong>Create Form</p>
+                            <p class="step_pic"><img src="images/landing/img_step06.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">6-1</strong>Modify Form</p>
+                            <p class="step_pic"><img src="images/landing/img_step06_1.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">6-2</strong>Modify Form</p>
+                            <p class="step_pic"><img src="images/landing/img_step06_2.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">6-3</strong>Modify Form</p>
+                            <p class="step_pic"><img src="images/landing/img_step06_3.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">7</strong>Search All Documents</p>
+                            <p class="step_pic"><img src="images/landing/img_step07.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="stpes"><strong class="circle">7-1</strong>Company profile</p>
+                            <p class="step_pic"><img src="images/landing/img_step07_1.png" alt=""></p>
+                        </li>
+                    </ol>
+                    <div class="btn_area">
+                        <a href="#"><span>oz in Excel User Guide</span></a>
+                        <a href="#"><span>eformfign User Guide</span></a>
+                    </div>
+                </section>
+            </div><!-- //contents -->
+            <div class="visual_bottom">
+                <p class="inner"><img src="images/landing/img_phones.png" alt=""></p>
+            </div>
+        </section><!-- //container -->
+
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="information">
+                    <ul class="link_policy">
+                        <li><a href="#" target="_blank">Terms of Use</a></li>
+                        <li><a href="#" target="_blank">Privacy Policy</a></li>
+                    </ul>
+                    <p class="select_language">
+                        <select>
+                            <option value="ko">한국어</option>
+                            <option value="en">English</option>
+                            <option value="ja">日本語</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="contactus">
+                    <a href="#none" target="_blank" class="footer_logo"><spen class="blind">eformsign</spen></a>
+                    <a href="mailto:eformsign@forcs.com" class="mailto">eformsign@forcs.com</a>
+                    <ul class="link_blog">
+                        <li><a href="#" target="_blank">Contact Us</a></li>
+                        <li><a href="#" target="_blank">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="copyright"><small>Copyright © FORCS Co.,LTD. All rights reserved.</small></div>
+            </div><!-- //footer_inner -->
+        </footer><!-- //footer -->
+        <div class="quick_area">
+            <div class="btn_quick">
+                <a href="#" class="go_top"><i><span class="blind">상단으로 이동</span></i></a>
+                <a href="#" class="go_blog"><span class="blind">blog로 이동</span></a>
+            </div><!-- //btn_quick -->
+        </div>
+    </div><!-- //wrap -->
+
+<script src="./../plugins/swiper/swiper.min.js"></script>
+<script>
+(function(){
+    // visual banner swiper plugin
+    var swiper = new Swiper('#swiper', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        //autoplay: 5000,
+        autoplayDisableOnInteraction: false
+    });
+
+    // scroll시 header에 fixed
+    var headerWrap = $("#header");
+    $(window).on("scroll", function(){
+        if($(this).scrollTop() > 0){
+            headerWrap.addClass("fixedTop");
+        } else if ($(this).scrollTop() < 1){
+            headerWrap.removeClass("fixedTop");
+        } else{
+            return false
+        }
+    });
+}).call(this);
+</script>
+</body>
+</html>
